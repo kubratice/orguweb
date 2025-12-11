@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Ürün Detayı - Örgü Dünyası</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+    <div id="notification-container"></div>
+
+    <header id="main-header">
+    <header id="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">ÖrgüDünyası</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="urunler.html">Ürünler</a></li>
+                    <li><a href="hırkalar.html">Hırkalar</a></li>
+                    <li><a href="buketler.html">Buketler</a></li>
+                    <li><a href="bereler.html">Bereler</a></li>
+                    <li><a href="eldivenler.html">Eldivenler</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Ürün ara...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="header-icons">
+                    <a href="#" aria-label="Kullanıcı Hesabı"><i class="far fa-user"></i></a>
+                    <a href="sepetim.html" class="cart-icon" aria-label="Alışveriş Sepeti">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container page-container">
+            
+            <div class="product-detail-layout">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="https://placehold.co/600x700/333333/ffffff" alt="Kışlık Siyah Bere Ana Görsel" id="mainProductImage">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="https://placehold.co/100x120/333333/ffffff" alt="Bere Thumbnail 1" class="thumbnail active">
+                        <img src="https://placehold.co/100x120/555555/ffffff" alt="Bere Thumbnail 2" class="thumbnail">
+                        <img src="https://placehold.co/100x120/111111/ffffff" alt="Bere Thumbnail 3" class="thumbnail">
+                        <img src="https://placehold.co/100x120/444444/ffffff" alt="Bere Thumbnail 4" class="thumbnail">
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h1 class="product-title">Kışlık Siyah Bere</h1>
+                    <div class="product-meta">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>4.7 (31 Değerlendirme)</span>
+                        </div>
+                        <span class="product-sku">SKU: BR-001</span>
+                    </div>
+                    <div class="product-price large">
+                        <span class="new-price">₺75</span>
+                    </div>
+                    <p class="product-description">
+                        %100 yün malzemeden üretilmiş, soğuk kış günleri için ideal, yumuşak dokulu el örgüsü bere. Standart kalıbı sayesinde her kafa yapısına mükemmel uyum sağlar.
+                    </p>
+
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label for="color">Renk:</label>
+                            <select name="color" id="color">
+                                <option value="siyah">Siyah</option>
+                                <option value="gri">Gri</option>
+                                <option value="kirmizi">Kırmızı</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="product-purchase">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn" id="decrease-qty">-</button>
+                            <input type="number" id="quantity" value="1" min="1">
+                            <button class="quantity-btn" id="increase-qty">+</button>
+                        </div>
+                        <button class="btn btn-primary btn-add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Sepete Ekle
+                        </button>
+                    </div>
+
+                    <div class="product-extra-info">
+                        <h4>Ürün Detayları</h4>
+                        <ul>
+                            <li><strong>Malzeme:</strong> %100 Doğal Yün</li>
+                            <li><strong>Bakım:</strong> Elde yıkama önerilir.</li>
+                            <li><strong>Üretim:</strong> El Yapımı</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </main>
+
+    <footer id="main-footer">
+       </footer>
+
+    <script src="js/style.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap - Örgü Dünyası</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">ÖrgüDünyası</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="urunler.html">Ürünler</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container page-container">
+            <div class="auth-container">
+                <div class="auth-form">
+                    <div class="auth-header">
+                        <img src="https://placehold.co/80x80/f2e9e4/4a4a4a" alt="Logo" class="auth-logo">
+                        <h2>Hesabınıza Giriş Yapın</h2>
+                        <p>Alışverişe devam etmek için lütfen giriş yapın.</p>
+                    </div>
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="email">E-posta Adresi</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Şifre</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <div class="form-options">
+                            <label class="remember-me"><input type="checkbox"> Beni Hatırla</label>
+                            <a href="#" class="forgot-password">Şifremi Unuttum</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Giriş Yap</button>
+                    </form>
+                    <div class="auth-footer">
+                        <p>Hesabınız yok mu? <a href="kayit.html">Hemen kaydolun</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer" class="simple-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 ÖrgüDünyası. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="js/style.js"></script>
+</body>
+</html>

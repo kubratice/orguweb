@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alışveriş Sepeti - Örgü Dünyası</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">ÖrgüDünyası</a>
+            <nav class="main-nav">
+                <ul> 
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="urunler.html">Ürünler</a></li>
+                    <li><a href="hırkalar.html">Hırkalar</a></li>
+                    <li><a href="buketler.html">Buketler</a></li>
+                    <li><a href="bereler.html">Bereler</a></li>
+                    <li><a href="eldivenler.html">Eldivenler</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Ürün ara...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="header-icons">
+                    <a href="kayit.html" aria-label="Kullanıcı Hesabı"><i class="far fa-user"></i></a>
+                    <a href="sepetim.html" class="cart-icon" aria-label="Alışveriş Sepeti">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container page-container">
+            <h1>Alışveriş Sepeti</h1>
+            <p class="cart-item-count">Sepetinizde 2 ürün bulunmaktadır.</p>
+            <div class="cart-layout">
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <img src="https://placehold.co/100x120/e8dcca/4a4a4a" alt="Klasik Yün Kazak">
+                        <div class="item-details">
+                            <h3>Klasik Yün Kazak</h3>
+                            <p>Renk: Bej, Beden: M</p>
+                            <span class="item-price">₺450</span>
+                        </div>
+                        <div class="item-quantity">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn">-</button><input type="number" value="1" min="1"><button class="quantity-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="item-total-price">₺450</div>
+                        <button class="remove-item-btn">&times;</button>
+                    </div>
+                    <div class="cart-item">
+                        <img src="https://placehold.co/100x120/333333/ffffff" alt="Kışlık Bere">
+                        <div class="item-details">
+                            <h3>Kışlık Bere</h3>
+                            <p>Renk: Siyah, Beden: Tek Beden</p>
+                            <span class="item-price">₺75</span>
+                        </div>
+                        <div class="item-quantity">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn">-</button><input type="number" value="2" min="1"><button class="quantity-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="item-total-price">₺150</div>
+                        <button class="remove-item-btn">&times;</button>
+                    </div>
+                </div>
+                <div class="order-summary">
+                    <h3>Sipariş Özeti</h3>
+                    <div class="summary-row"><span>Ara Toplam (3 ürün)</span><span>₺600</span></div>
+                    <div class="summary-row"><span>Kargo</span><span class="free-shipping">Bedava!</span></div>
+                    <div class="summary-total"><span>Toplam</span><span>₺600</span></div>
+                    <a href="odeme.html" class="btn btn-primary btn-block">Siparişi Tamamla</a>
+                    <a href="urunler.html" class="continue-shopping">Alışverişe Devam Et</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="main-footer">
+       </footer>
+
+    <script src="js/style.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Ürünler - Örgü Dünyası</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">ÖrgüDünyası</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="urunler.html">Ürünler</a></li>
+                    <li><a href="hırkalar.html">Hırkalar</a></li>
+                    <li><a href="buketler.html">Buketler</a></li>
+                    <li><a href="bereler.html">Bereler</a></li>
+                    <li><a href="eldivenler.html">Eldivenler</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Ürün ara...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="header-icons">
+                    <a href="#" aria-label="Kullanıcı Hesabı"><i class="far fa-user"></i></a>
+                    <a href="#" class="cart-icon" aria-label="Alışveriş Sepeti">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container page-container">
+
+            <div class="product-listing-layout">
+                <aside class="filters">
+                    <div class="filter-group">
+                        <h3>Filtreler</h3>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Renk</h4>
+                        <ul class="filter-options">
+                            <li><label><input type="checkbox" name="color" value="siyah"> Siyah</label></li>
+                            <li><label><input type="checkbox" name="color" value="gri"> Gri</label></li>
+                            <li><label><input type="checkbox" name="color" value="kirmizi"> Kırmızı</label></li>
+                            <li><label><input type="checkbox" name="color" value="beyaz"> Beyaz</label></li>
+                            <li><label><input type="checkbox" name="color" value="renkli"> Renkli</label></li>
+                        </ul>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Beden</h4>
+                        <ul class="filter-options">
+                           <li><label><input type="checkbox" name="size" value="tek-beden"> Tek Beden</label></li>
+                        </ul>
+                    </div>
+                     <div class="filter-group">
+                        <h4>Fiyat Aralığı</h4>
+                        <input type="range" min="0" max="1000" value="500" class="price-slider">
+                        <div class="price-range-display">₺0 - ₺1000</div>
+                    </div>
+                    <button class="btn btn-secondary">Filtreleri Temizle</button>
+                </aside>
+
+                <section class="product-grid-container">
+                    <div class="sort-options">
+                       <label for="sort">Sırala:</label>
+                       <select name="sort" id="sort">
+                           <option value="default">İsme Göre</option>
+                           <option value="price-asc">Fiyata Göre Artan</option>
+                           <option value="price-desc">Fiyata Göre Azalan</option>
+                       </select>
+                    </div>
+                    <div class="product-grid">
+                        
+                        <div class="product-card" data-color="siyah" data-price="75">
+                            <div class="product-image-container"><img src="https://placehold.co/400x450/333333/ffffff" alt="Kışlık Siyah Bere"><a href="urun_detay.html" class="view-product-btn">İncele</a></div>
+                            <div class="product-card-details"><h3>Kışlık Siyah Bere</h3><div class="product-card-price"><span class="new-price">₺75</span></div><div class="product-card-rating"><i class="fas fa-star"></i> 4.7 (31)</div></div>
+                        </div>
+                        <div class="product-card" data-color="kirmizi" data-price="85">
+                            <div class="product-image-container"><img src="https://placehold.co/400x450/e74c3c/ffffff" alt="Kışlık Kırmızı Bere"><a href="#" class="view-product-btn">İncele</a></div>
+                            <div class="product-card-details"><h3>Kışlık Kırmızı Bere</h3><div class="product-card-price"><span class="new-price">₺85</span></div><div class="product-card-rating"><i class="fas fa-star"></i> 4.8 (22)</div></div>
+                        </div>
+                        <div class="product-card" data-color="gri" data-price="65">
+                            <div class="product-image-container"><img src="https://placehold.co/400x450/95a5a6/ffffff" alt="Kışlık Gri Bere"><a href="#" class="view-product-btn">İncele</a></div>
+                            <div class="product-card-details"><h3>Kışlık Gri Bere</h3><div class="product-card-price"><span class="new-price">₺65</span></div><div class="product-card-rating"><i class="fas fa-star"></i> 4.6 (45)</div></div>
+                        </div>
+                        <div class="product-card" data-color="beyaz" data-price="80">
+                            <div class="product-image-container"><img src="https://placehold.co/400x450/ecf0f1/333333" alt="Kışlık Beyaz Bere"><a href="#" class="view-product-btn">İncele</a></div>
+                            <div class="product-card-details"><h3>Kışlık Beyaz Bere</h3><div class="product-card-price"><span class="new-price">₺80</span></div><div class="product-card-rating"><i class="fas fa-star"></i> 4.9 (15)</div></div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        </footer>
+
+    <script src="js/style.js"></script>
+</body>
+</html>

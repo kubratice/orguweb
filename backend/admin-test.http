@@ -1,0 +1,26 @@
+### Admin Giriş Testi ###
+POST http://localhost:3000/api/admin/login
+Content-Type: application/json
+
+{
+    "email": "admin@orgudunyasi.com",
+    "password": "123456"
+}
+
+### Hatalı Şifre Testi ###
+POST http://localhost:3000/api/admin/login
+Content-Type: application/json
+
+{
+    "email": "admin@orgudunyasi.com",
+    "password": "yanlis_sifre"
+}
+
+### YENİ TEST: Ürünleri Yetkisiz Listeleme (BAŞARISIZ OLMALI) ###
+GET http://localhost:3000/api/admin/products
+
+
+### YENİ TEST: Ürünleri Yetkili Listeleme (BAŞARILI OLMALI) ###
+GET http://localhost:3000/api/admin/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzYyNDI3MzI0LCJleHAiOjE3NjI0MzA5MjR9.3HBvTp2O_mFV9JD8YrS__W68HPpTDdiDXz4AYO4ZlTQ
+

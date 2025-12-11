@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Siparişler</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="admin-panel-body">
+
+    <header class="admin-header">
+        <h1>Sipariş Yönetimi</h1>
+        <div class="header-actions">
+            <a href="index.html" class="admin-btn" style="background-color: #3498db; text-decoration: none;">Ürün Yönetimi</a>
+            <button id="logout-btn" class="admin-btn btn-danger">Çıkış Yap</button>
+        </div>
+    </header>
+
+    <main class="admin-container" style="grid-template-columns: 1fr;">
+        <div class="product-list-container">
+            <h2>Gelen Siparişler</h2>
+            <table id="orders-table">
+                <thead>
+                    <tr>
+                        <th>Sipariş No</th>
+                        <th>Müşteri</th>
+                        <th>Tarih</th>
+                        <th>Tutar</th>
+                        <th>Adres</th>
+                    </tr>
+                </thead>
+                <tbody id="orders-table-body">
+                    <!-- Siparişler JS ile buraya gelecek -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

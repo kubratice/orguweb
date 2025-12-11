@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ödeme - Örgü Dünyası</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">ÖrgüDünyası</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="urunler.html">Ürünler</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="header-right">
+                <div class="header-icons">
+                    <a href="#" aria-label="Güvenli Ödeme"><i class="fas fa-lock"></i> Güvenli Ödeme</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   <!-- ... Header ... -->
+
+    <main class="main-content">
+        <div class="container page-container">
+            <h1>Ödeme Bilgileri</h1>
+            <div class="checkout-layout">
+                <div class="customer-details">
+                    <form id="checkout-form">
+                        <section class="checkout-section">
+                            <h2>Teslimat Adresi</h2>
+                            <div class="form-grid">
+                                <div class="form-group half-width"><label for="firstname">Ad</label><input type="text" id="firstname" required></div>
+                                <div class="form-group half-width"><label for="lastname">Soyad</label><input type="text" id="lastname" required></div>
+                                <div class="form-group full-width"><label for="address">Adres</label><input type="text" id="address" required></div>
+                                <div class="form-group half-width"><label for="city">Şehir</label><input type="text" id="city" required></div>
+                                <div class="form-group half-width"><label for="phone">Telefon</label><input type="tel" id="phone" required></div>
+                                <div class="form-group full-width"><label for="email">E-posta</label><input type="email" id="email" required></div>
+                            </div>
+                        </section>
+                        
+                        <section class="checkout-section">
+                            <h2>Ödeme Bilgileri</h2>
+                            <p>Tüm işlemler güvenli ve şifrelidir.</p>
+                            <div class="form-grid">
+                                <div class="form-group full-width"><label for="card-number">Kart Numarası</label><input type="text" id="card-number" placeholder="•••• •••• •••• ••••" required></div>
+                                <div class="form-group full-width"><label for="card-name">Kart Üzerindeki İsim</label><input type="text" id="card-name" required></div>
+                                <div class="form-group half-width"><label for="card-expiry">Son Kullanma Tarihi (AA/YY)</label><input type="text" id="card-expiry" placeholder="AA/YY" required></div>
+                                <div class="form-group half-width"><label for="card-cvc">CVC</label><input type="text" id="card-cvc" placeholder="•••" required></div>
+                            </div>
+                        </section>
+
+                        <button type="submit" class="btn btn-primary btn-block" style="margin-top: 20px;">Ödemeyi Tamamla ve Sipariş Ver</button>
+                    </form>
+                </div>
+
+                <aside class="order-summary-checkout">
+                    <h3>Siparişiniz</h3>
+                    <div class="summary-items" id="checkout-summary-items">
+                    </div>
+                    <div class="summary-calculation">
+                        <div class="summary-row"><span>Ara Toplam</span><span id="checkout-subtotal">₺0.00</span></div>
+                        <div class="summary-row"><span>Kargo</span><span class="free-shipping">Bedava</span></div>
+                        <div class="summary-total"><span>Toplam</span><span id="checkout-total">₺0.00</span></div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+
+    <footer id="main-footer" class="simple-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 ÖrgüDünyası. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="js/style.js"></script>
+</body>
+</html>
